@@ -266,7 +266,7 @@ var initRestoreCmd = &cli.Command{
 
 		log.Info("Configuring miner actor")
 
-		if err := configureStorageMiner(ctx, api, maddr, peerid, big.Zero()); err != nil {
+		if err := configureStorageMiner(ctx, api, maddr, peerid, big.Zero(), big.Zero()); err != nil {
 			return err
 		}
 
